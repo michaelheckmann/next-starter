@@ -1,22 +1,5 @@
-# next-template
+# Next Starter
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+A simple Next.js 13 starter created from [shadcn/next-template](https://github.com/shadcn/next-template). It includes shadcn/ui, Tailwind CSS, Typescript, stateless Magic Link authentication, and more.
 
-## Usage
-
-```bash
-npx create-next-app -e https://github.com/shadcn/next-template
-```
-
-## Features
-
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
-
-## License
-
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+The authentication is handeled trough [Iron Session](https://github.com/vvo/iron-session) and does not require a database. It sends a magic link to the user's email address. The link contains a token that is used to authenticate the user.
