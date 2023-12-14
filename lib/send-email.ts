@@ -3,9 +3,6 @@ import { createTransport } from "nodemailer"
 type SendEmail = { url: string; email: string; from: string; server: string }
 
 export const sendEmail = async ({ url, email, from, server }: SendEmail) => {
-  return {
-    success: true,
-  }
   const { host } = new URL(url)
   // NOTE: You are not required to use `nodemailer`, use whatever you want.
   const transport = createTransport(server)
